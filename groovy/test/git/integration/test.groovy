@@ -2,12 +2,16 @@ package test.git.integration
 
 println "Git integration"
 
+void gitIntegrationMethod() {
+  println "Git integration method"
+}
+
 class GitIntegrationClass {
-  GitIntegration() {
+  GitIntegrationClass() {
     println "Git integration class constructor"
   }
 }
 
-void gitIntegrationMethod() {
-  println "Git integration method"
+void gitIntegrationMethodUsingClass() {
+  new GitIntegrationClass()
 }
